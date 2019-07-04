@@ -57,7 +57,7 @@ export default class Favorities extends React.Component {
         "https://theculturetrip.com/wp-content/uploads/2015/11/shutterstock_527099458.jpg"
     ]
 
-    createChildren = n => range(n).map(i => <div key={i} style={{ height: 400, background: '#333' }}><img src={this.imgs[i]} /></div>);
+    createChildren = n => range(n).map(i => <div key={i} style={{ height: 400, background: '#333' }}><img width="340px" height="400px" src={this.imgs[i]} /></div>);
 
     changeActiveItem = (activeItemIndex) => this.setState({ activeItemIndex });
 
