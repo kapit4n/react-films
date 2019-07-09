@@ -8,7 +8,7 @@ export default class Favorities extends React.Component {
     componentWillMount() {
         this.setState({
             children: [],
-            activeItemIndex: 0,
+            activeItemIndex: 3,
             columns: 3
         });
 
@@ -44,6 +44,7 @@ export default class Favorities extends React.Component {
     }
     componentDidMount() {
         window.addEventListener("resize", this.updateDimensions.bind(this), false);
+        //this.changeActiveItem(4);
     }
     componentWillUnmount() {
         window.removeEventListener("resize", this.updateDimensions.bind(this), false);
@@ -85,7 +86,7 @@ export default class Favorities extends React.Component {
                 // Active item configurations
                 requestToChangeActive={this.changeActiveItem}
                 activeItemIndex={activeItemIndex}
-                activePosition={'center'}
+                //activePosition={'center'}
 
                 chevronWidth={24}
                 rightChevron={'>'}
