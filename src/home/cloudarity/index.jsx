@@ -25,7 +25,8 @@ export default function Clourarity(props) {
       {
         cloudName: "dzpqgzke9",
         apiKey: "127779212656245",
-        uploadPreset: "k8gtkhif"
+        uploadPreset: "k8gtkhif",
+        thumbnailTransformation: [{ width: 200, height: 200, crop: "fit" }]
       },
       (error, result) => {
         console.log("upload");
