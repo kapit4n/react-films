@@ -1,12 +1,12 @@
-import React from 'react';
-import './home.css';
+import React from "react";
+import "./home.css";
 
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Container from '@material-ui/core/Container';
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Container from "@material-ui/core/Container";
 
-import Favorities3 from './favorities3';
-import FilmList from './film-list'
-
+import Favorities3 from "./favorities3";
+import FilmList from "./film-list";
+import Clourarity from "./cloudarity";
 
 export default class Home extends React.Component {
   render() {
@@ -14,8 +14,9 @@ export default class Home extends React.Component {
       <React.Fragment>
         <CssBaseline />
         <Container fixed>
-          <Favorities3></Favorities3>
-          <FilmList></FilmList>
+          <Clourarity />
+          <Favorities3 />
+          <FilmList />
         </Container>
       </React.Fragment>
     );
